@@ -1,0 +1,1 @@
+Uma aplicação onde os organizadores podem criar eventos e os usuários podem se inscrever para participar. Cada evento deve ter informações como data, local, descrição e limite de participantes. Os organizadores podem gerenciar a lista de inscritos
