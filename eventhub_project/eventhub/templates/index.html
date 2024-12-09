@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>eventhub</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'eventhub/css/style.css' %}">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="https://i.ibb.co/gmBQLk0/logo1.png" alt=""></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Eventos Disponíveis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#createEvent">Criar eventos
+                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Sair</a></li>
+                            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Crie e gerencie eventos de forma simples e eficiente</div>
+                <div class="masthead-heading text-uppercase">Organize e Participe de Eventos com Facilidade</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Conheça mais</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Serviços</h2>
+                    <h3 class="section-subheading text-muted">Conheça nossos Serviços.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">(Comércio Eletrônico)
+
+                            Transforme sua ideia em uma loja virtual de sucesso! Desenvolvemos soluções completas de comércio eletrônico, com integração de pagamento, gestão de inventário e experiência de compra otimizada para que seu negócio esteja preparado para o mercado digital.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Custom Event Creation</h4>
+                        <p class="text-muted">(Criação de Eventos Personalizados)Organize eventos únicos, totalmente personalizados para suas necessidades. Desde pequenos encontros a grandes celebrações, oferecemos suporte em todas as etapas para garantir o sucesso do seu evento.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Security</h4>
+                        <p class="text-muted">(Segurança na Web)Proteja seu site contra ameaças digitais. Implementamos as melhores práticas de segurança na web, incluindo criptografia de dados, autenticação e monitoramento de atividade, para garantir a proteção de informações sensíveis e a tranquilidade dos seus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Eventos Disponíveis</h2>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images.even3.com/F6ZAnm9wBUdoxiIClu9JS-7CIgk=/1100x440/smart/even3.blob.core.windows.net/banner/Prancheta1-8.ed9eaeb40f9d4e12b426.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">IX Semana Acadêmica de Design e Jornalismo</div>
+                                <div class="portfolio-caption-subheading text-muted">Manaus - AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images.even3.com/Xj7W-gr6BSdSwZLxawJQhBEZzkk=/1100x440/smart/even3.blob.core.windows.net/banner/LogoJornada6000x4000px.1c5db98ac679475a95cd.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Jornada Sergipana de Pediatria Ambulatorial</div>
+                                <div class="portfolio-caption-subheading text-muted">Acaraju - SE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images.even3.com/d1UWa0uEJSAa_pJgvv8s99qXCsI=/1100x440/smart/even3.blob.core.windows.net/banner/ImagenCapa-IPBanner1.e57f385602514c889186.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">I CONGRESSO INTERNACIONAL DE INOVAÇÃO E PESQUISA</div>
+                                <div class="portfolio-caption-subheading text-muted">Londrina - PR</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images.even3.com/TE8JQrIlow0BFQ8vN7oZ4gRTu8E=/1100x440/smart/even3.blob.core.windows.net/banner/RedModernEsportMatchScheduleFacebookCover_20241101_141714_0000.5ae480a3ee49437bbdba.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">III Simpósio de Atualizações em Urgência e Emergência</div>
+                                <div class="portfolio-caption-subheading text-muted">BrandingVitória de Santo Antão - PE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <!-- Portfolio item 6-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Criar Evento -->
+    <section class="page-section" id="createEvent">
+        <div class="container">
+            <h2 class="section-heading text-center">Criar Evento</h2>
+            <form id="eventForm">
+                <div class="mb-3">
+                    <label for="eventName" class="form-label">Nome do Evento</label>
+                    <input type="text" class="form-control" id="eventName" required />
+                </div>
+                <div class="mb-3">
+                    <label for="eventDate" class="form-label">Data do Evento</label>
+                    <input type="date" class="form-control" id="eventDate" required />
+                </div>
+                <div class="mb-3">
+                    <label for="eventLocation" class="form-label">Local</label>
+                    <input type="text" class="form-control" id="eventLocation" required />
+                </div>
+                <div class="mb-3">
+                    <label for="eventDescription" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="eventDescription" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="eventLimit" class="form-label">Limite de Participantes</label>
+                    <input type="number" class="form-control" id="eventLimit" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Criar Evento</button>
+            </form>
+        </div>
+    </section>
+
+        </section>
+        <!-- About-->
+        </section> 
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Eventhub 2024</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Politica de privacidade</a>
+                        <a class="link-dark text-decoration-none" href="#!">Termos de uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.74 579.74"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style></defs><line class="cls-1" x1="2.12" y1="2.12" x2="577.62" y2="577.62"/><line class="cls-1" x1="2.12" y1="577.62" x2="577.62" y2="2.12"/></svg></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">IX Semana Acadêmica de Design e Jornalismo</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://images.even3.com/F6ZAnm9wBUdoxiIClu9JS-7CIgk=/1100x440/smart/even3.blob.core.windows.net/banner/Prancheta1-8.ed9eaeb40f9d4e12b426.png" alt="..." />
+                                    <h4 class="text-uppercase">Sobre o evento</h4>
+                                    <p>É com enorme alegria que realizaremos a IX Semana Acadêmica dos cursos de Design Gráfico e Jornalismo, que ocorrerá de 5 a 8 de novembro de 2024. O evento é uma realização dos cursos de Design Gráfico e Jornalismo do Centro Universitário FAMETRO.
+
+                                        O cenário da comunicação no Amazonas oferece uma riqueza única de histórias, culturas e paisagens que clamam por serem contadas de forma visual e impactante. No entanto, essa missão vem acompanhada de desafios específicos que profissionais de design gráfico e produção audiovisual enfrentam diariamente. Para explorarmos o tema, precisamos observar a colaboração, a infraestrutura, a identidade local e o mercado no Norte. Esses são alguns dos elementos que moldam o futuro da comunicação visual no Amazonas.
+                                        
+                                        A Semana Acadêmica deste ano tem como objetivo principal promover um espaço de troca e aprendizagem entre alunos e profissionais atuantes na área, com foco em design e produção audiovisual. Nesta edição, o evento visa fomentar o debate sobre as novas linguagens e tecnologias que estão transformando o campo da comunicação visual e jornalística, explorando como designers e produtores audiovisuais podem usar suas habilidades criativas para contribuir com a valorização da cultura e identidade amazônica.
+                                        
+                                        O tema do evento, “No Puxirum da Comunicação! Os Desafios de Designers e Produtores Audiovisuais no Amazonas”, destaca a colaboração entre os dois cursos e os profissionais dessas áreas, promovendo uma comunicação eficaz e o trabalho em equipe. Puxirum é uma gíria regional que significa trabalho coletivo, refletindo a união e o esforço conjunto em prol de objetivos comuns.
+                                        </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Data:</strong>
+                                            05/11/2024 – 08/01/2025 - 19:00 - 22:00 GMT-4
+                                        </li>
+                                        <li>
+                                            <strong>Local:</strong>
+                                            Fametro Unidade I e II - Sede - Manaus - Amazonas - Brasil
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        se inscrever
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.74 579.74"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style></defs><line class="cls-1" x1="2.12" y1="2.12" x2="577.62" y2="577.62"/><line class="cls-1" x1="2.12" y1="577.62" x2="577.62" y2="2.12"/></svg></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Jornada Sergipana de Pediatria Ambulatorial</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://images.even3.com/Xj7W-gr6BSdSwZLxawJQhBEZzkk=/1100x440/smart/even3.blob.core.windows.net/banner/LogoJornada6000x4000px.1c5db98ac679475a95cd.png" alt="..." />
+                                    <h4 class="text-uppercase">Sobre o evento</h4>
+                                    <p>É com grande entusiasmo que convidamos você para participar da nossa primeira Jornada de Pediatria Ambulatorial, que ocorrerá nos dias 08 e 09 de novembro de 2024 no auditório do CREMESE, em Aracaju, SE. Este evento tem como objetivo reunir profissionais da área da saúde, estudantes, e interessados em discutir as práticas mais recentes, desafios e inovações no cuidado pediátrico.
+
+                                        Durante a jornada, teremos palestras de especialistas renomados, mesas-redondas interativas e workshops práticos, proporcionando uma oportunidade única de aprendizado e troca de experiências. 
+                                        
+                                        Esta  é a primeira edição do evento e espera-se a presença de cerca de 150 a 200 participantes. Seu apoio será de grande importância e acreditamos que juntos podemos promover um ambiente mais saudável e acolhedor para nossas crianças. Est</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Data:</strong>
+                                            08/11/2024 – 09/11/2024 - 09:00 - 13:00 GMT-3
+                                        </li>
+                                        <li>
+                                            <strong>Local:</strong>
+                                            CREMESE - Aracaju - Sergipe - Brasil
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        se inscrever
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.74 579.74"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style></defs><line class="cls-1" x1="2.12" y1="2.12" x2="577.62" y2="577.62"/><line class="cls-1" x1="2.12" y1="577.62" x2="577.62" y2="2.12"/></svg></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">I CONGRESSO INTERNACIONAL DE INOVAÇÃO E PESQUISA</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://images.even3.com/d1UWa0uEJSAa_pJgvv8s99qXCsI=/1100x440/smart/even3.blob.core.windows.net/banner/ImagenCapa-IPBanner1.e57f385602514c889186.png" alt="..." />
+                                    <h4 class="text-uppercase">Sobre o evento</h4>
+                                    <p>I Congresso Internacional de Inovação e Pesquisa, um evento acadêmico-científico de destaque que une o VI Simpósio de Iniciação Científica e Tecnológica a Distância (SIMPICT) e o VIII Simpósio Internacional de Ensino, Linguagens e Tecnologias (SELITEC). Organizado pelo Programa de Pós-graduação Stricto Sensu em Ensino da Universidade Pitágoras Unopar e com o apoio da CAPES, este é o espaço ideal para você se atualizar, compartilhar conhecimento e inovar.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Data:</strong>
+                                            06/11/2024 – 09/11/2024 - 18:30 - 12:00 GMT-3
+                                        </li>
+                                        <li>
+                                            <strong>Local:</strong>
+                                            Londrina - Londrina - Paraná - Brasil
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        se inscrever
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579.74 579.74"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style></defs><line class="cls-1" x1="2.12" y1="2.12" x2="577.62" y2="577.62"/><line class="cls-1" x1="2.12" y1="577.62" x2="577.62" y2="2.12"/></svg></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">III Simpósio de Atualizações em Urgência e Emergência</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://images.even3.com/na6e-3uDkgg7sRs_QneWQOYXjAA=/1100x440/smart/even3.blob.core.windows.net/banner/Slide1.fd5ed2c0e21d47d5be82.PNG" alt="..." />
+                                    <h4 class="text-uppercase">Sobre o evento</h4>
+                                    <p>Prezados (a) colegas, alunos e profissionais.
+
+                                        É com imensa felicidade e entusiasmo que o Núcleo de Estudantes em Emergências (NEEM) e o Laboratório de Urgência e Emergência (LAUREM) da Universidade Federal de Pernambuco estão organizando, com apoio do Diretório Acadêmico  Vanguardista de Enfermagem, Gestão Izabel Santos - UFPE_CAV, o III Simpósio de Atualizações em Urgência e Emergência. 
+                                        
+                                        
+                                        A equipe que está à frente da organização do III Simpósio de Atualizações em Urgência e Emergência está dedicada em preparar uma programação diversificada e repleta de temas da mais alta relevância no âmbito da Urgência e Emergência, e suas atualizações. Nossa meta é apresentar palestras e minicursos atualizados, incentivando uma visão aprofundada do conhecimento.
+                                        
+                                        
+                                        Comissão Organizadora</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Data:</strong>
+                                            13/02/2025 – 14/02/2025 - 07:30 - 18:00 GMT-3
+                                        </li>
+                                        <li>
+                                            <strong>Local:</strong>
+                                            Centro Acadêmico da Vitória - CAV - UFPE - Vitória de Santo Antão - Pernambuco - Brasil
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        se inscrever
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <!-- Portfolio item 6 modal popup-->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="{% static 'eventhub/js/script.js' %}"></script>
+    </body>
+</html>

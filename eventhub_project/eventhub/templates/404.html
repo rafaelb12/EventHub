@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+        .error-container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 72px;
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Ops! A página que você procura não foi encontrada.</p>
+        <p><a href="{% url 'index' %}">Voltar para a página inicial</a></p>
+    </div>
+</body>
+</html>
